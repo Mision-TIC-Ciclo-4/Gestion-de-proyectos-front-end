@@ -254,6 +254,7 @@ const InscripcionProyecto = ({ idProyecto, estado, inscripciones }) => {
   const [estadoInscripcion, setEstadoInscripcion] = useState('');
   const [crearInscripcion, { data, loading, error }] = useMutation(CREAR_INSCRIPCION);
   const { userData } = useUser();
+ 
 
   useEffect(() => {
     if (userData && inscripciones) {
