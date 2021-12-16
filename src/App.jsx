@@ -27,7 +27,7 @@ import IndexInscripciones from 'pages/inscripciones';
 const httpLink = createHttpLink({
   //uri: 'http://localhost:4000/graphql',
   
-  uri: 'https://adminprojects-back.herokuapp.com/',
+  uri: 'https://adminprojects-back.herokuapp.com/graphql',
 });
 
 const authLink = setContext((_, { headers }) => {
